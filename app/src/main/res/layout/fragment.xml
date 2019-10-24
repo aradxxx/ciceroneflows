@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/switch_to_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="SWITCH TO 2 TAB" />
+
+        <Button
+            android:id="@+id/switch_to_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="SWITCH TO 3 TAB AND OPEN ANOTHER ONE" />
+
+        <Button
+            android:id="@+id/add_to_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="ADD TO 3 WITHOUT SWITCH" />
+
+        <Button
+            android:id="@+id/open_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="OPEN NEXT IN CURRENT TAB" />
+
+        <Button
+            android:id="@+id/open_next_global"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="OPEN NEXT IN ACTIVITY GLOBAL" />
+
+        <Button
+            android:id="@+id/replace_global"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="REPLACE CURRENT IN ACTIVITY GLOBAL" />
+    </LinearLayout>
+</ScrollView>
