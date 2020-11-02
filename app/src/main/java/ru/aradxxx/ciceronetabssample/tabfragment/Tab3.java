@@ -2,11 +2,10 @@ package ru.aradxxx.ciceronetabssample.tabfragment;
 
 import android.os.Bundle;
 
-import ru.aradxxx.ciceronetabssample.AppFragmentScreen;
-import ru.aradxxx.ciceronetabssample.Tab;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import ru.aradxxx.ciceronetabssample.AppFragmentScreen;
+import ru.aradxxx.ciceronetabssample.Tab;
 
 /**
  * Пример конкретной реализации фрагмента таба.

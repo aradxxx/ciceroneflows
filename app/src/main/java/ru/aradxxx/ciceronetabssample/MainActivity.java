@@ -2,21 +2,18 @@ package ru.aradxxx.ciceronetabssample;
 
 import android.os.Bundle;
 
-import ru.aradxxx.ciceronetabs.NavigationContainer;
-import ru.aradxxx.ciceronetabs.TabCicerone;
-import ru.aradxxx.ciceronetabs.TabNavigator;
-import ru.aradxxx.ciceronetabs.TabRouter;
-import ru.aradxxx.ciceronetabssample.R;
-
-import ru.aradxxx.ciceronetabssample.tabfragment.Tab1Screen;
-import ru.aradxxx.ciceronetabssample.tabfragment.Tab2Screen;
-import ru.aradxxx.ciceronetabssample.tabfragment.Tab3Screen;
-import ru.aradxxx.ciceronetabssample.tabfragment.TabContainerScreen;
-
 import javax.inject.Inject;
 
 import androidx.annotation.NonNull;
 import dagger.android.support.DaggerAppCompatActivity;
+import ru.aradxxx.ciceronetabs.NavigationContainer;
+import ru.aradxxx.ciceronetabs.TabCicerone;
+import ru.aradxxx.ciceronetabs.TabNavigator;
+import ru.aradxxx.ciceronetabs.TabRouter;
+import ru.aradxxx.ciceronetabssample.tabfragment.Tab1Screen;
+import ru.aradxxx.ciceronetabssample.tabfragment.Tab2Screen;
+import ru.aradxxx.ciceronetabssample.tabfragment.Tab3Screen;
+import ru.aradxxx.ciceronetabssample.tabfragment.TabContainerScreen;
 
 /**
  * Пример активити приложения

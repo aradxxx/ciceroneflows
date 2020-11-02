@@ -1,10 +1,9 @@
 package ru.aradxxx.ciceronetabssample;
 
-import ru.aradxxx.ciceronetabssample.di.AppComponent;
-import ru.aradxxx.ciceronetabssample.di.DaggerAppComponent;
-
 import dagger.android.AndroidInjector;
 import dagger.android.support.DaggerApplication;
+import ru.aradxxx.ciceronetabssample.di.AppComponent;
+import ru.aradxxx.ciceronetabssample.di.DaggerAppComponent;
 
 public final class App extends DaggerApplication {
     @Override

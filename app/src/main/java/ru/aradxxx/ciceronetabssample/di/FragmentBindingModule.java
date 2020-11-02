@@ -1,12 +1,11 @@
 package ru.aradxxx.ciceronetabssample.di;
 
+import dagger.Module;
+import dagger.android.ContributesAndroidInjector;
 import ru.aradxxx.ciceronetabssample.tabfragment.Tab1;
 import ru.aradxxx.ciceronetabssample.tabfragment.Tab2;
 import ru.aradxxx.ciceronetabssample.tabfragment.Tab3;
 import ru.aradxxx.ciceronetabssample.tabfragment.TabContainerFragment;
-
-import dagger.Module;
-import dagger.android.ContributesAndroidInjector;
 
 @Module
 public interface FragmentBindingModule {

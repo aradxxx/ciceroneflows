@@ -1,13 +1,10 @@
 package ru.aradxxx.ciceronetabssample;
 
-import ru.aradxxx.ciceronetabssample.R;
-
+import androidx.annotation.MenuRes;
+import androidx.annotation.NonNull;
 import ru.aradxxx.ciceronetabssample.tabfragment.Tab1Screen;
 import ru.aradxxx.ciceronetabssample.tabfragment.Tab2Screen;
 import ru.aradxxx.ciceronetabssample.tabfragment.Tab3Screen;
-
-import androidx.annotation.MenuRes;
-import androidx.annotation.NonNull;
 
 /**
  * Пример класса с тегами табов.

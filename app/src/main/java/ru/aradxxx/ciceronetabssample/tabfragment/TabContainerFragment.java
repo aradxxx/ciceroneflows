@@ -6,14 +6,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
-import ru.aradxxx.ciceronetabssample.R;
-import ru.aradxxx.ciceronetabs.NavigationContainer;
-import ru.aradxxx.ciceronetabs.TabCicerone;
-import ru.aradxxx.ciceronetabs.TabNavigator;
-import ru.aradxxx.ciceronetabs.TabRouter;
-import ru.aradxxx.ciceronetabssample.MainActivity;
-import ru.aradxxx.ciceronetabssample.Tab;
-import ru.aradxxx.ciceronetabssample.TabListener;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import javax.inject.Inject;
@@ -21,6 +13,14 @@ import javax.inject.Inject;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import dagger.android.support.DaggerFragment;
+import ru.aradxxx.ciceronetabs.NavigationContainer;
+import ru.aradxxx.ciceronetabs.TabCicerone;
+import ru.aradxxx.ciceronetabs.TabNavigator;
+import ru.aradxxx.ciceronetabs.TabRouter;
+import ru.aradxxx.ciceronetabssample.MainActivity;
+import ru.aradxxx.ciceronetabssample.R;
+import ru.aradxxx.ciceronetabssample.Tab;
+import ru.aradxxx.ciceronetabssample.TabListener;
 
 /**
  * Пример базового класса фрагмента контейнера табов.

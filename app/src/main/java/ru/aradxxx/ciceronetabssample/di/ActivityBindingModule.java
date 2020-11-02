@@ -3,12 +3,11 @@ package ru.aradxxx.ciceronetabssample.di;
 import android.app.Application;
 import android.content.Context;
 
-import ru.aradxxx.ciceronetabssample.MainActivity;
-
 import androidx.annotation.NonNull;
 import dagger.Binds;
 import dagger.Module;
 import dagger.android.ContributesAndroidInjector;
+import ru.aradxxx.ciceronetabssample.MainActivity;
 
 @Module
 public interface ActivityBindingModule {

@@ -8,17 +8,14 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
-import ru.aradxxx.ciceronetabs.NavigationContainer;
-import ru.aradxxx.ciceronetabs.TabRouter;
-import ru.aradxxx.ciceronetabssample.R;
-
-import ru.aradxxx.ciceronetabssample.tabfragment.Tab2Screen;
-import ru.aradxxx.ciceronetabssample.tabfragment.Tab3Screen;
-
 import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import ru.aradxxx.ciceronetabs.NavigationContainer;
+import ru.aradxxx.ciceronetabs.TabRouter;
+import ru.aradxxx.ciceronetabssample.tabfragment.Tab2Screen;
+import ru.aradxxx.ciceronetabssample.tabfragment.Tab3Screen;
 
 /**
  * Пример фрагмента экрана.

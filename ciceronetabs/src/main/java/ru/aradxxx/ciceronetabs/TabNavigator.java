@@ -3,13 +3,6 @@ package ru.aradxxx.ciceronetabs;
 import android.content.Intent;
 import android.os.Bundle;
 
-import ru.aradxxx.ciceronetabs.command.SwitchTab;
-import ru.aradxxx.ciceronetabs.command.TBack;
-import ru.aradxxx.ciceronetabs.command.TBackTo;
-import ru.aradxxx.ciceronetabs.command.TForward;
-import ru.aradxxx.ciceronetabs.command.TReplace;
-import ru.aradxxx.ciceronetabs.command.TSwitchTab;
-
 import java.util.LinkedList;
 
 import androidx.annotation.NonNull;
@@ -17,6 +10,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+import ru.aradxxx.ciceronetabs.command.SwitchTab;
+import ru.aradxxx.ciceronetabs.command.TBack;
+import ru.aradxxx.ciceronetabs.command.TBackTo;
+import ru.aradxxx.ciceronetabs.command.TForward;
+import ru.aradxxx.ciceronetabs.command.TReplace;
+import ru.aradxxx.ciceronetabs.command.TSwitchTab;
 import ru.terrakok.cicerone.Navigator;
 import ru.terrakok.cicerone.android.support.SupportAppScreen;
 import ru.terrakok.cicerone.commands.Back;

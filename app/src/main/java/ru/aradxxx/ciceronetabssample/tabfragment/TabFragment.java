@@ -6,21 +6,20 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import ru.aradxxx.ciceronetabssample.R;
-import ru.aradxxx.ciceronetabs.NavigationContainer;
-import ru.aradxxx.ciceronetabs.TabCicerone;
-import ru.aradxxx.ciceronetabs.TabNavigator;
-import ru.aradxxx.ciceronetabs.TabRouter;
-import ru.aradxxx.ciceronetabssample.MainActivity;
-import ru.aradxxx.ciceronetabssample.Tab;
-import ru.aradxxx.ciceronetabssample.TabListener;
-
 import javax.inject.Inject;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import dagger.android.support.DaggerFragment;
+import ru.aradxxx.ciceronetabs.NavigationContainer;
+import ru.aradxxx.ciceronetabs.TabCicerone;
+import ru.aradxxx.ciceronetabs.TabNavigator;
+import ru.aradxxx.ciceronetabs.TabRouter;
+import ru.aradxxx.ciceronetabssample.MainActivity;
+import ru.aradxxx.ciceronetabssample.R;
+import ru.aradxxx.ciceronetabssample.Tab;
+import ru.aradxxx.ciceronetabssample.TabListener;
 
 /**
  * Пример базового класса фрагмента таба.
