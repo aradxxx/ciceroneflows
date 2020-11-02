@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="ru.aradxxx.ciceronetabssample">
+    package="com.github.aradxxx.ciceroneflowssample">
 
     <application
-        android:name="ru.aradxxx.ciceronetabssample.App"
+        android:name="com.github.aradxxx.ciceroneflowssample.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -14,9 +14,9 @@
         tools:ignore="GoogleAppIndexingWarning">
 
         <activity
-            android:name="ru.aradxxx.ciceronetabssample.MainActivity"
-            android:windowSoftInputMode="stateHidden|adjustResize"
-            android:launchMode="singleTask">
+            android:name="com.github.aradxxx.ciceroneflowssample.MainActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden|adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

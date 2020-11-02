@@ -1,5 +1,6 @@
-[![](https://jitpack.io/v/aradxxx/ciceronetabs.svg)](https://jitpack.io/#aradxxx/ciceronetabs)
-#### CiceroneTabs - небольшая библиотека упрощаяющая реализацию Instagram like навигации с использованием [Cicerone](https://github.com/terrakok/Cicerone)
+[![](https://jitpack.io/v/aradxxx/ciceroneflows.svg)](https://jitpack.io/#aradxxx/ciceroneflows)
+#### CiceroneFlows - небольшая библиотека упрощаяющая реализацию Instagram like навигации с использованием [Cicerone]
+(https://github.com/terrakok/Cicerone)
 
 #### Download
 ```
@@ -12,7 +13,7 @@ allprojects {
 
 dependencies {
     ...
-    implementation 'com.github.aradxxx:ciceronetabs:0.1'
+    implementation 'com.github.aradxxx:ciceroneflows:0.6.3'
 }
 ```
 
