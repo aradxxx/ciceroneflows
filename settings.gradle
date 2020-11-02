@@ -1,2 +1,2 @@
-include ':app', ':ciceronetabs'
+include ':app', ':ciceroneflow'
 rootProject.name='Sample'
