@@ -1,7 +1,7 @@
 package com.github.aradxxx.ciceroneflowssample.tabfragment
 
-import com.github.terrakok.cicerone.androidx.FragmentScreen
 import com.github.aradxxx.ciceroneflowssample.Tab
+import com.github.terrakok.cicerone.androidx.FragmentScreen
 
 /**
  * Пример конкретной реализации фрагмента таба.
@@ -28,19 +28,19 @@ class Tab3 : TabFragment() {
  * Пример реализации экрана таба.
  */
 class Tab1Screen : FragmentScreen(
-    createFragment = {
+    fragmentCreator = {
         Tab1()
     }
 )
 
 class Tab2Screen : FragmentScreen(
-    createFragment = {
+    fragmentCreator = {
         Tab2()
     }
 )
 
 class Tab3Screen : FragmentScreen(
-    createFragment = {
+    fragmentCreator = {
         Tab3()
     }
 )

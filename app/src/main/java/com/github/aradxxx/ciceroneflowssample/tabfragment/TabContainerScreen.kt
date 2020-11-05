@@ -6,7 +6,7 @@ import com.github.terrakok.cicerone.androidx.FragmentScreen
  * Пример реализации экрана контейнера табов.
  */
 class TabContainerScreen : FragmentScreen(
-    createFragment = {
+    fragmentCreator = {
         TabContainerFragment()
     }
 )
