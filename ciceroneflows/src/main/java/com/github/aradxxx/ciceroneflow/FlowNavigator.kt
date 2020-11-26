@@ -80,10 +80,8 @@ open class FlowNavigator<R : FlowRouter>(
 
     protected open fun detachIfExists(transaction: FragmentTransaction, vararg tags: String) {
         for (tag in tags) {
-            val fragment = fragmentManager.findFragmentByTag(tag)
-            if (null != fragment) {
-                transaction.detach(fragment)
-            }
+            val fragment = fragmentManager.findFragmentByTag(tag) ?: continue
+            transaction.detach(fragment)
         }
     }
 

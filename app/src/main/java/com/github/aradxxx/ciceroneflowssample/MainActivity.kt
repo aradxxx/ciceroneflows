@@ -5,9 +5,9 @@ import com.github.aradxxx.ciceroneflow.FlowCicerone
 import com.github.aradxxx.ciceroneflow.FlowNavigator
 import com.github.aradxxx.ciceroneflow.FlowRouter
 import com.github.aradxxx.ciceroneflow.NavigationContainer
+import com.github.aradxxx.ciceroneflowssample.tabfragment.tab1Screen
+import com.github.aradxxx.ciceroneflowssample.tabfragment.tabContainerScreen
 import dagger.android.support.DaggerAppCompatActivity
-import com.github.aradxxx.ciceroneflowssample.tabfragment.Tab1Screen
-import com.github.aradxxx.ciceroneflowssample.tabfragment.TabContainerScreen
 import javax.inject.Inject
 
 /**
@@ -46,10 +46,10 @@ class MainActivity : DaggerAppCompatActivity(), NavigationContainer<FlowRouter> 
     }
 
     private fun firstNavigation() {
-        router().newRootScreen(TabContainerScreen())
-        router().newRootScreen(Tab.Tab1.tag(), AppFragmentScreen("FROM ACTIVITY 1"))
-        router().newRootScreen(Tab.Tab3.tag(), AppFragmentScreen("FROM ACTIVITY 3"))
-        router().newRootScreen(Tab.Tab2.tag(), AppFragmentScreen("FROM ACTIVITY 2"))
-        router().switch(Tab1Screen())
+        router().newRootScreen(tabContainerScreen())
+        router().newRootScreen(Tab.Tab1.tag(), appFragmentScreen("FROM ACTIVITY 1"))
+        router().newRootScreen(Tab.Tab3.tag(), appFragmentScreen("FROM ACTIVITY 3"))
+        router().newRootScreen(Tab.Tab2.tag(), appFragmentScreen("FROM ACTIVITY 2"))
+        router().switch(tab1Screen())
     }
 }

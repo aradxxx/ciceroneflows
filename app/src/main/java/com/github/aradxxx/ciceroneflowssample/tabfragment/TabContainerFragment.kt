@@ -9,12 +9,12 @@ import com.github.aradxxx.ciceroneflow.FlowCicerone
 import com.github.aradxxx.ciceroneflow.FlowNavigator
 import com.github.aradxxx.ciceroneflow.FlowRouter
 import com.github.aradxxx.ciceroneflow.NavigationContainer
-import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.google.android.material.bottomnavigation.BottomNavigationView.OnNavigationItemReselectedListener
-import dagger.android.support.DaggerFragment
 import com.github.aradxxx.ciceroneflowssample.R
 import com.github.aradxxx.ciceroneflowssample.Tab
 import com.github.aradxxx.ciceroneflowssample.TabListener
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.bottomnavigation.BottomNavigationView.OnNavigationItemReselectedListener
+import dagger.android.support.DaggerFragment
 import javax.inject.Inject
 
 /**
@@ -70,9 +70,9 @@ class TabContainerFragment :
         bottomNavigationView?.setOnNavigationItemSelectedListener(null)
         bottomNavigationView?.setOnNavigationItemReselectedListener(null)
         when (menuItem.itemId) {
-            R.id.tab1 -> router().switch(Tab1Screen())
-            R.id.tab2 -> router().switch(Tab2Screen())
-            R.id.tab3 -> router().switch(Tab3Screen())
+            R.id.tab1 -> router().switch(tab1Screen())
+            R.id.tab2 -> router().switch(tab2Screen())
+            R.id.tab3 -> router().switch(tab3Screen())
         }
         bottomNavigationView?.setOnNavigationItemSelectedListener(this)
         bottomNavigationView?.setOnNavigationItemReselectedListener(this)

@@ -11,8 +11,8 @@ import androidx.activity.OnBackPressedCallback
 import androidx.fragment.app.Fragment
 import com.github.aradxxx.ciceroneflow.FlowRouter
 import com.github.aradxxx.ciceroneflow.NavigationContainer
-import com.github.aradxxx.ciceroneflowssample.tabfragment.Tab2Screen
-import com.github.aradxxx.ciceroneflowssample.tabfragment.Tab3Screen
+import com.github.aradxxx.ciceroneflowssample.tabfragment.tab2Screen
+import com.github.aradxxx.ciceroneflowssample.tabfragment.tab3Screen
 
 /**
  * Пример фрагмента экрана.
@@ -38,40 +38,40 @@ class AppFragment : Fragment() {
         if (arguments != null) {
             // отображает на экране с какого таба был открыт фрагмент
             // и текущий размер стека
-            val text = ("OPENED FROM: <b>" + arguments!!.getString(BUNDLE_KEY_LABEL)
+            val text = ("OPENED FROM: <b>" + requireArguments().getString(BUNDLE_KEY_LABEL)
                 + "</b><br/><br/>back stack size: <b>" + backStackSize() + "</b>")
             label.text = Html.fromHtml(text)
         }
 
         // кнопка переключения на 2ой таб
         switchButton.setOnClickListener {
-            router.switch(Tab2Screen())
+            router.switch(tab2Screen())
         }
 
         // кнопка переключения на 3ий таб и открытие еще одного фрагмента
         switchAndAnotherOneButton.setOnClickListener {
-            router.switch(Tab3Screen())
-            router.navigateTo(Tab.Tab3.tag(), AppFragmentScreen(tabTag()))
+            router.switch(tab3Screen())
+            router.navigateTo(Tab.Tab3.tag(), appFragmentScreen(tabTag()))
         }
 
         // Открытие экрана на 3ем табе, без переключения таба
         addWithoutSwitchButton.setOnClickListener {
-            router.navigateTo(Tab.Tab3.tag(), AppFragmentScreen(tabTag()))
+            router.navigateTo(Tab.Tab3.tag(), appFragmentScreen(tabTag()))
         }
 
         // кнопка открытия еще одного фрагмента на текущем табе
         nextButton.setOnClickListener {
-            router.navigateTo(AppFragmentScreen(tabTag()))
+            router.navigateTo(appFragmentScreen(tabTag()))
         }
 
         // кнопка открытия еще одного фрагмента поверх табов
         nextGlobalButton.setOnClickListener {
-            router.navigateTo("", AppFragmentScreen("ACTIVITY"))
+            router.navigateTo("", appFragmentScreen("ACTIVITY"))
         }
 
         // кнопка замены глобал экрана
         replaceGlobalButton.setOnClickListener {
-            router.replaceScreen("", AppFragmentScreen("REPLACED"))
+            router.replaceScreen("", appFragmentScreen("REPLACED"))
         }
         return view
     }
@@ -100,7 +100,7 @@ class AppFragment : Fragment() {
     private fun backStackSize(): String {
         return if (parentFragment == null) {
             requireActivity().supportFragmentManager.backStackEntryCount.toString()
-        } else parentFragment!!.childFragmentManager.backStackEntryCount.toString()
+        } else requireParentFragment().childFragmentManager.backStackEntryCount.toString()
     }
 
     companion object {
