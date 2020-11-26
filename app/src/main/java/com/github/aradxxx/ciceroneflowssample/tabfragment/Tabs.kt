@@ -27,20 +27,14 @@ class Tab3 : TabFragment() {
 /**
  * Пример реализации экрана таба.
  */
-class Tab1Screen : FragmentScreen(
-    fragmentCreator = {
-        Tab1()
-    }
-)
+fun tab1Screen() = FragmentScreen("Tab1") {
+    Tab1()
+}
 
-class Tab2Screen : FragmentScreen(
-    fragmentCreator = {
-        Tab2()
-    }
-)
+fun tab2Screen() = FragmentScreen("Tab2") {
+    Tab2()
+}
 
-class Tab3Screen : FragmentScreen(
-    fragmentCreator = {
-        Tab3()
-    }
-)
+fun tab3Screen() = FragmentScreen("Tab3") {
+    Tab3()
+}

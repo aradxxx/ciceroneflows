@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
-apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-parcelize'
 
 android {
     compileSdkVersion 30
@@ -28,14 +28,14 @@ android {
 
 dependencies {
     implementation project(':ciceroneflows')
+    implementation "com.github.terrakok:cicerone:$rootProject.ext.ciceroneVersion"
 
-    implementation 'androidx.appcompat:appcompat:1.2.0'
-    implementation 'com.google.android.material:material:1.2.1'
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation "com.google.android.material:material:1.2.1"
+    implementation "androidx.constraintlayout:constraintlayout:2.0.4"
 
-    implementation "com.google.dagger:dagger:2.29.1"
-    implementation "com.google.dagger:dagger-android-support:2.29.1"
+    implementation "com.google.dagger:dagger:2.30"
+    implementation "com.google.dagger:dagger-android-support:2.30"
 
-    kapt "com.google.dagger:dagger-compiler:2.29.1"
-    kapt "com.google.dagger:dagger-android-processor:2.29.1"
+    kapt "com.google.dagger:dagger-compiler:2.30"
+    kapt "com.google.dagger:dagger-android-processor:2.30"
 }

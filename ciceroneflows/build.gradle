@@ -27,7 +27,6 @@ android {
 }
 
 dependencies {
-    api "com.github.terrakok:cicerone:6.4"
-    api "androidx.annotation:annotation:1.1.0"
-    api "androidx.appcompat:appcompat:1.2.0"
+    compileOnly "com.github.terrakok:cicerone:$rootProject.ext.ciceroneVersion"
+    compileOnly "androidx.appcompat:appcompat:1.2.0"
 }
