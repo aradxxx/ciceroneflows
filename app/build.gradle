@@ -28,7 +28,6 @@ android {
 
 dependencies {
     implementation project(':ciceroneflows')
-    implementation "com.github.terrakok:cicerone:$rootProject.ext.ciceroneVersion"
 
     implementation "com.google.android.material:material:1.2.1"
     implementation "androidx.constraintlayout:constraintlayout:2.0.4"
