@@ -27,6 +27,6 @@ android {
 }
 
 dependencies {
-    compileOnly "com.github.terrakok:cicerone:$rootProject.ext.ciceroneVersion"
-    compileOnly "androidx.appcompat:appcompat:1.2.0"
+    api "com.github.terrakok:cicerone:$rootProject.ext.ciceroneVersion"
+    api "androidx.appcompat:appcompat:1.2.0"
 }

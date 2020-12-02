@@ -14,7 +14,6 @@ allprojects {
 dependencies {
     ...
     implementation 'com.github.aradxxx:ciceroneflows:0.6.6'
-    implementation 'com.github.terrakok:cicerone:6.6'
 }
 ```
 
