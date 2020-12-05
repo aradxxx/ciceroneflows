@@ -1,6 +1,5 @@
 [![](https://jitpack.io/v/aradxxx/ciceroneflows.svg)](https://jitpack.io/#aradxxx/ciceroneflows)
-#### CiceroneFlows - небольшая библиотека упрощаяющая реализацию Instagram like навигации с использованием [Cicerone]
-(https://github.com/terrakok/Cicerone)
+#### CiceroneFlows - library for simple subnavigation (e.g. instagram like tabs) with [Cicerone](https://github.com/terrakok/Cicerone).
 
 #### Download
 ```
@@ -13,7 +12,7 @@ allprojects {
 
 dependencies {
     ...
-    implementation 'com.github.aradxxx:ciceroneflows:0.6.6'
+    implementation 'com.github.aradxxx:ciceroneflows:$latestVersion'
 }
 ```
 
@@ -21,14 +20,16 @@ dependencies {
 
 <div style="text-align:center"><img src="/media/ui_scheme.png"/></div>
 
-```TabCicerone``` предоставляет доступ к различным экземплярам ```Cicerone``` везде где необходим независимый стек фрагментов:
-активити, таб фрагменты и фрагмент - контейнер для таб фрагментов.
+```FlowCicerone``` provides different instances of ```Cicerone``` wherever an independent navigation flow is necessary:
+activity, flow fragments and flow fragment container.
 
-```TabRouter``` предоставляет группу дополнительных методов для работы с таб навигацией:
- 1. Используйте стандартные методы для выполнения навигации в текущем стеке (например ```router.navigateTo(Screen screen)```).
- 2. Для выполнения навигации в стеке таба используйте перегруженные стандартные методы с указанием тега таба (например ```router.navigateTo("Tab1", Screen screen)```).
- 3. Для выполнения навигации в стеке активити используйте перегруженные стандартные методы с указанием пустого тега (например ```router.navigateTo("", Screen screen)```).
- 4. Инициализация и/или переключение таба выполняется командой ```router.switchTab(Screen screen)```.
+```FlowRouter``` provides several additional methods for working with subnavigation:
+1. Use standart methods for current flow navigation (for example ```router.navigateTo(screen)```).
+2. Use overloaded methods for navigation on a specific flow (for example ```router.navigateTo("Tab1", screen)```).
+3. Use overloaded methods with empty tag for navigation in activity stack (for example ```router.navigateTo("", screen)```).
+4. Use switch command for switch current flow ```router.switch("Tab2")```.
+
+Check out [sample app](app)
  
  #### License
  ```
