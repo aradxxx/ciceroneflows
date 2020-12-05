@@ -6,7 +6,7 @@ apply plugin: 'kotlin-parcelize'
 android {
     compileSdkVersion 30
     defaultConfig {
-        applicationId "com.github.aradxxx.ciceronetabssample"
+        applicationId "com.github.aradxxx.ciceroneflowsample"
         minSdkVersion 17
         targetSdkVersion 30
         versionCode 1
@@ -23,7 +23,10 @@ android {
         sourceCompatibility 1.8
         targetCompatibility 1.8
     }
-    buildFeatures.viewBinding = true
+    buildFeatures {
+        viewBinding = true
+        buildConfig = false
+    }
 }
 
 dependencies {
