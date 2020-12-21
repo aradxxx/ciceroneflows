@@ -86,11 +86,17 @@ open class FlowNavigator<R : FlowRouter>(
     }
 
     override fun back() {
-        if (!isActivity() && activityFM.backStackEntryCount != 0) {
-            flowCicerone.mainRouter().exit()
-            return
-        } else {
-            super.back()
+        when {
+            localStackCopy.isNotEmpty() -> {
+                fragmentManager.popBackStack()
+                localStackCopy.removeAt(localStackCopy.lastIndex)
+            }
+            !isActivity() && activityFM.backStackEntryCount != 0 -> {
+                flowCicerone.mainRouter().exit()
+            }
+            else -> {
+                super.back()
+            }
         }
     }
 
