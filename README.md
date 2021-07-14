@@ -1,4 +1,6 @@
 [![](https://jitpack.io/v/aradxxx/ciceroneflows.svg)](https://jitpack.io/#aradxxx/ciceroneflows)
+
+### This library is **deprecated**. Please use [Modo](https://github.com/terrakok/Modo) or [Cicerone](https://github.com/terrakok/Cicerone)
 #### CiceroneFlows - library for simple subnavigation (e.g. instagram like tabs) with [Cicerone](https://github.com/terrakok/Cicerone).
 
 #### Download
